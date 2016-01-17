@@ -200,3 +200,10 @@ Fired when a DCC transfer encounter an error
 
 ## Misc.
 Todo...
+
+
+## Thanks
+
+- [Indysama](https://github.com/Indysama) for [node-xdcc](https://github.com/Indysama/node-xdcc)
+- [DaVarga](https://github.com/DaVarga) for  [node-axdcc](https://github.com/DaVarga/node-axdcc/)
+- [relisys](https://github.com/coinigy) from irc.freenode.org#node.JS for its help (pointing the obvious !)
