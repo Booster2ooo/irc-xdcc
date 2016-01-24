@@ -1,8 +1,8 @@
 {
   "name": "irc-xdcc",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "irc module extension that provide xdcc handlers",
-  "main": "irc-xdcc.js",
+  "main": "lib/irc-xdcc",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
