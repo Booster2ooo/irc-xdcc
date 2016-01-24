@@ -1,5 +1,10 @@
 # irc-xdcc
 
+## Disclamer
+
+This module does not intend to facilitate illegal files transfer. The author may not be taken responsible for any copyright infringement or illegal uses.
+
+
 ## Introduction
 nodeJS [irc module](https://github.com/martynsmith/node-irc) extension that provide xdcc handlers.
 

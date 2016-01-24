@@ -1,6 +1,6 @@
 {
   "name": "irc-xdcc",
-  "version": "0.0.1",
+  "version": "0.0.12",
   "description": "irc module extension that provide xdcc handlers",
   "main": "irc-xdcc.js",
   "scripts": {
