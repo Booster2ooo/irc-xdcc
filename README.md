@@ -73,6 +73,7 @@ ircXdcc('irc.myserver.com', 'myBotNick', ircOptions)
 irc-xdcc module extends irc.Client methods with a set of promises:
 
 **xdcc(packInfo)**
+
 Add a xdccInstance to the pool and starts xdcc transfer for the provided pack infos ( { botNick: 'xdccBot', packId: 1 } ) where botNick is the xdcc server bot nick and packId, the required pack id.
 
 ```javascript
@@ -89,6 +90,7 @@ botInstance.xdcc({ botNick: 'xdccBot', packId: '1'})
 ```
 
 **cancelXdcc(xdccInstance)**
+
 Cancel DCC transfer using xdccInstance.
 
 ```javascript
@@ -100,6 +102,7 @@ botInstance.cancelXdcc(xdccInstance)
 ```
 
 **cancelPackInfo(packInfo)**
+
 Cancel DCC transfer instances matching packInfo ({ botNick: 'xdccBot', packId: 1 }).
 
 ```javascript
@@ -111,6 +114,7 @@ botInstance.cancelPackInfo({ botNick: 'xdccBot', packId: '1'})
 ```
 
 **cancelPoolId(poolId)**
+
 Cancel DCC transfer for the specified poolId (xdccInstance.xdccPoolId).
 
 ```javascript
@@ -122,6 +126,7 @@ botInstance.cancelPoolId(2)
 ```
 
 **getXdccPool()**
+
 Returns xdccPool array (where xdccInstances are stored).
 
 ```javascript
@@ -133,6 +138,7 @@ botInstance.getXdccPool()
 ```
 
 **removeXdcc(xdccInstance)**
+
 Cancel xdcc transfer and remove xdccInstance from pool.
 
 ```javascript
@@ -144,6 +150,7 @@ botInstance.removeXdcc(xdccInstance)
 ```
 
 **removePoolId(poolId)**
+
 Cancel xdcc transfer and remove xdccInstance from pool using its pool id.
 
 ```javascript
@@ -227,18 +234,23 @@ An xdccInstance is an object containing pieces of information and methods regard
 ```
 
 **start()**
+
 Used to send XDCC SEND command to the bot.
 
 **cancel()**
+
 Used to send XDCC CANCEL/REMOVE command to the bot.
 
 **reset()**
+
 Reset xdccInfo
 
 **restart()**
+
 Reset xdccInfo and start again
 
 **getIndex()**
+
 Refresh instance _xdccPool index and return it
 
 
