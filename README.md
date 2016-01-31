@@ -171,6 +171,30 @@ function(message[,complement]) {}
 ```
 Event fired when a method call is erroneous
 
+**'xdcc-created'**
+```
+function(xdccInstance) {}
+```
+Fired when a DCC instance has been created (and added to the xdccPool) (see misc. section for xdccInstance info)
+
+**'xdcc-removed'**
+```
+function(xdccInstance) {}
+```
+Fired when a DCC instance has been removed from xdccPool (see misc. section for xdccInstance info)
+
+**'xdcc-started'**
+```
+function(xdccInstance) {}
+```
+Fired when the XDCC SEND command has been sent (see misc. section for xdccInstance info)
+
+**'xdcc-queued'**
+```
+function(xdccInstance) {}
+```
+Fired when a queue notice has been recieved from the server (see misc. section for xdccInstance info)
+
 **'xdcc-complete'**
 ```
 function(xdccInstance) {}
