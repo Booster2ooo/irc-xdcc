@@ -20,6 +20,10 @@ irc-xdcc provide a promise wrapper for the irc module. It extends the [available
   , resume: true // [Boolean] Allow download to be resumed -- Default: true
   , acceptUnpooled: false // [Boolean] Accept unrequested DCC download (accept a DCC download that doesn't match any DCC instance found in _xdccPool array -- Default: false
   , closeConnectionOnDisconnect: true // [Boolean] Defines if active sockets should be closed if the IRC client get disconnected or killed -- Default: true
+  , method: 'say' // [String] Defines the method to trigger xdcc bots, either 'say' or 'ctcp' (you can also use 'msg' which is equivalent to 'say') -- Default: 'say'
+  , sendCommand: 'XDCC SEND' // [String] the command sent to the bot to initiate the xdcc transfert -- Default: 'XDCC SEND'
+  , cancelCommand: 'XDCC CANCEL' // [String] the command sent to the bot to cancel the xdcc transfert -- Default: 'XDCC CANCEL'
+  , removeCommand: 'XDCC REMOVE' // [String] the command sent to the bot to cancel a queued transfert -- Default: 'XDCC REMOVE'
 }
 ```
 
@@ -164,6 +168,12 @@ botInstance.removePoolId(1)
 
 ## Events
 Along with extending irc module option and methods, some events have been added too:
+
+**'connected'**
+```
+function(channels) {}
+```
+Event fired when the irc client is connected and joined all channels specified in the options
 
 **'xdcc-error'**
 ```
