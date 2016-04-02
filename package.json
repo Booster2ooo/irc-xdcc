@@ -6,7 +6,7 @@
 	"irc xdcc",
 	"irc dcc",
 	"xdcc",
-	"dcc",	
+	"dcc"
   ],
   "main": "lib/irc-xdcc",
   "scripts": {
