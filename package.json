@@ -1,12 +1,12 @@
 {
   "name": "irc-xdcc",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "irc-xdcc is a node-irc promises based extension providing xdcc handlers.",
-  "keywords:" : [
-	"irc xdcc",
-	"irc dcc",
-	"xdcc",
-	"dcc"
+  "keywords:": [
+    "irc xdcc",
+    "irc dcc",
+    "xdcc",
+    "dcc"
   ],
   "main": "lib/irc-xdcc",
   "scripts": {
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Booster2ooo/irc-xdcc",
   "repository": "git://github.com/Booster2ooo/irc-xdcc",
   "bugs": {
-	"url":"https://github.com/Booster2ooo/irc-xdcc/issues"
+    "url": "https://github.com/Booster2ooo/irc-xdcc/issues"
   },
   "readmeFilename": "README.md"
 }
