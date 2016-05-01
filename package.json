@@ -1,13 +1,17 @@
 {
   "name": "irc-xdcc",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "irc-xdcc is a node-irc promises based extension providing xdcc handlers.",
   "keywords:": [
     "irc",
-    "irc-dcc",
-    "irc-xdcc",
+    "dcc",
     "xdcc",
-    "dcc"
+    "bot",
+    "download",
+    "iroffer",
+    "dinoex",
+    "fserver",
+    "fileserver"
   ],
   "main": "lib/irc-xdcc",
   "scripts": {

@@ -24,6 +24,7 @@ irc-xdcc provide a promise wrapper for the irc module. It extends the [available
   , sendCommand: 'XDCC SEND' // [String] the command sent to the bot to initiate the xdcc transfert -- Default: 'XDCC SEND'
   , cancelCommand: 'XDCC CANCEL' // [String] the command sent to the bot to cancel the xdcc transfert -- Default: 'XDCC CANCEL'
   , removeCommand: 'XDCC REMOVE' // [String] the command sent to the bot to cancel a queued transfert -- Default: 'XDCC REMOVE'
+  , joinTopicChans: true // [Boolean] automatically rejoin channels mentioned in the topic -- Default: true
 }
 ```
 
