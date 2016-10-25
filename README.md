@@ -226,9 +226,9 @@ Fired when a DCC transfer starts (see misc. section for xdccInstance info)
 
 **'xdcc-progress'**
 ```
-function(xdccInstance) {}
+function(xdccInstance, received) {}
 ```
-Fired every *option.progressInterval* seconds during DCC transfer
+Fired every *option.progressInterval* seconds during DCC transfer providing the *received* bytes
 
 **'xdcc-dlerror'**
 ```
