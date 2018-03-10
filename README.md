@@ -253,6 +253,9 @@ An xdccInstance is an object containing pieces of information and methods regard
   , canceled // true if an error occured and the cancel/remove command has been send to the server
   , xdccPoolIndex // index of the instance in the internal _xdccPool array
   , resumePos // used to store resume position when an incomplete file is found in the destPath
+  , received // number of bytes received
+  , progress // progression percentage
+  , speed // average download speed (bytes per second)
   , startedAt // process.hrtime() value when the download has been started
   , duration // process.hrtime(startedAt) value when the download has been completed
   , intervalId // progress event setInterval id 

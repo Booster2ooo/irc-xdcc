@@ -1,6 +1,6 @@
 {
   "name": "irc-xdcc",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "irc-xdcc is a node-irc promises based extension providing xdcc handlers.",
   "keywords:": [
     "irc",
