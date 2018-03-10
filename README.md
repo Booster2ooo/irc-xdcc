@@ -247,6 +247,7 @@ An xdccInstance is an object containing pieces of information and methods regard
 {
 	botNick // xdcc server bot nick
   , packId // xdcc pack id
+  , server // irc server address
   , started // true if the transfer started already
   , queued // true if the transfer has been queued by the server
   , finished // true if the transfer has been completed
