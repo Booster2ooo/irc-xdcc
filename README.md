@@ -1,3 +1,7 @@
+```diff
+!!! DEPRECATED, USE IRC-XDCC-2 INSTEAD - https://github.com/Booster2ooo/irc-xdcc-2 !!!
+```
+
 # irc-xdcc
 
 ## Disclamer
@@ -247,16 +251,12 @@ An xdccInstance is an object containing pieces of information and methods regard
 {
 	botNick // xdcc server bot nick
   , packId // xdcc pack id
-  , server // irc server address
   , started // true if the transfer started already
   , queued // true if the transfer has been queued by the server
   , finished // true if the transfer has been completed
   , canceled // true if an error occured and the cancel/remove command has been send to the server
   , xdccPoolIndex // index of the instance in the internal _xdccPool array
   , resumePos // used to store resume position when an incomplete file is found in the destPath
-  , received // number of bytes received
-  , progress // progression percentage
-  , speed // average download speed (bytes per second)
   , startedAt // process.hrtime() value when the download has been started
   , duration // process.hrtime(startedAt) value when the download has been completed
   , intervalId // progress event setInterval id 
